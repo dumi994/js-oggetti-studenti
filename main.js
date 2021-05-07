@@ -6,7 +6,10 @@ var studente = {
 }
 console.log(studente);
 //Stampare a schermo attraverso un ciclo for-in tutte le proprietà dell'oggetto.
-
+for (var key in studente){
+    console.log(studente[key]);
+}
+document.getElementById('nomi').innerHTML = studente[key];
 
 //Creare un array di oggetti di studenti.
 
