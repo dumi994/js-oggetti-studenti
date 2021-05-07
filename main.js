@@ -17,65 +17,44 @@ for (key in studente){
 document.getElementById('nomi').innerHTML = testo;
 
 //Creare un array di oggetti di studenti.
-/* testo += studente[key] + ' ';
-    document.getElementById('nomi').innerHTML = testo */;
 
-/* var studenti = [
-    
-    
-    {
-        'nome': 'mario',
-        cognome: 'draghi',
-        eta: 2021 - 1947,
-    },
-    {
-        'nome': 'matteo',
-        cognome: 'renzie',
-        eta: 2021 - 1975,
-    },
-    {
-        'nome': 'Matteo',
-        cognome: 'Renzie',
-        eta: 2021 - 1975,
-    },
-    {
-        'nome': 'Beppe',
-        cognome: 'Fiorello',
-        eta: 2021 - 1969,
-    },
-    document.getElementById('nomi').innerHTML = testo 
- 
-]
- */
 var studenti = [
-    studente1 = {
+    {
         'nome': 'Mario',
         cognome: 'Draghi',
         eta: 2021 - 1947,
     },
-    studente2 = {
+    {
         'nome': 'Matteo',
         cognome: 'Renzie',
         eta: 2021 - 1975,
     },
-    studente3 = {
+    {
         'nome': 'Beppe',
         cognome: 'Fiorello',
         eta: 2021 - 1969,
-    }
-  ];
+    },
+];
+
+
+console.log(questoStudente);
+
 console.log(studenti);
-/* for (key in studenti){
-    console.log(studenti[key]);
-    testo += studenti[key] + ' ';
-} */
+
+for (var i = 0; i < studenti.length; i++){
+    var questoStudente = studenti[i];
+    document.getElementById('nomi2').innerHTML += questoStudente.nome + ' ' + questoStudente.cognome + ' ' + questoStudente.eta + '<br>'; 
+}
+
+
+/* 
 var testo2= '';
 for (key in studenti){
     console.log(studenti[key]);
-    testo2 += studenti[key];
+    testo2 += studenti[key] + ' ';
     document.getElementById('nomi2').innerHTML += studenti[key] + ' ';
 }
-document.getElementById('nomi2').innerHTML = testo2;
+document.getElementById('nomi2').innerHTML = testo2; */
 
 //Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
 
