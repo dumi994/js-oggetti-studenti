@@ -49,13 +49,13 @@ document.getElementById('nomi').innerHTML = testo;
  */
 var studenti = [
     studente1 = {
-        'nome': 'mario',
-        cognome: 'draghi',
+        'nome': 'Mario',
+        cognome: 'Draghi',
         eta: 2021 - 1947,
     },
     studente2 = {
-        'nome': 'matteo',
-        cognome: 'renzie',
+        'nome': 'Matteo',
+        cognome: 'Renzie',
         eta: 2021 - 1975,
     },
     studente3 = {
@@ -64,11 +64,16 @@ var studenti = [
         eta: 2021 - 1969,
     }
   ];
-  console.log(studenti);
-  
- 
-  
 console.log(studenti);
+/* for (key in studenti){
+    console.log(studenti[key]);
+    testo += studenti[key] + ' ';
+} */
+for (key in studenti){
+    console.log(studente[key]);
+    document.getElementById('nomi').innerHTML += studenti[key] + ' ';
+}
+document.getElementById('nomi2').innerHTML = testo;
 
 //Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
 
