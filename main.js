@@ -69,11 +69,13 @@ console.log(studenti);
     console.log(studenti[key]);
     testo += studenti[key] + ' ';
 } */
+var testo2= '';
 for (key in studenti){
-    console.log(studente[key]);
-    document.getElementById('nomi').innerHTML += studenti[key] + ' ';
+    console.log(studenti[key]);
+    testo2 += studenti[key];
+    document.getElementById('nomi2').innerHTML += studenti[key] + ' ';
 }
-document.getElementById('nomi2').innerHTML = testo;
+document.getElementById('nomi2').innerHTML = testo2;
 
 //Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
 
