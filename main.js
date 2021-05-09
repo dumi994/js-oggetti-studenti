@@ -37,14 +37,16 @@ var studenti = [
 ];
 
 
-console.log(questoStudente);
 
 console.log(studenti);
+
+//Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
 
 for (var i = 0; i < studenti.length; i++){
     var questoStudente = studenti[i];
     document.getElementById('nomi2').innerHTML += questoStudente.nome + ' ' + questoStudente.cognome + ' ' + questoStudente.eta + '<br>'; 
 }
+console.log(questoStudente);
 
 
 /* 
@@ -56,7 +58,15 @@ for (key in studenti){
 }
 document.getElementById('nomi2').innerHTML = testo2; */
 
-//Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
 
 
 //Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
+var nuoviStudenti = {
+    'nome' : prompt('Inserisci il nome del nuovo studente'),
+    cognome: prompt('Inserisci il cognome del nuovo studente'),
+    eta: Number(prompt('Inserisci l\'età del nuovo studente')),
+    
+};
+document.getElementById('nomi2').innerHTML += nuoviStudenti.nome + ' ' + nuoviStudenti.cognome + ' ' + nuoviStudenti.eta + '<br>'; 
+studenti.push(nuoviStudenti);
+console.log(nuoviStudenti);
